@@ -96,16 +96,16 @@ open_graph:
 # Value before `||` delimiter is the target link, value after `||` delimiter is the name of Font Awesome icon.
 # External url should start with http:// or https://
 menu:
-  #home: / || fa fa-home
-  home: https://zhoushicheng.cn || fa fa-home
-  #about: /about/ || fa fa-user
-  about: https://zhoushicheng.cn/about/ || fa fa-user
-  #tags: /tags/ || fa fa-tags
-  tags: https://zhoushicheng.cn/tags/ || fa fa-tags
-  #categories: /categories/ || fa fa-th
-  categories: https://zhoushicheng.cn/categories/ || fa fa-th
-  #archives: /archives/ || fa fa-archive
-  archives: https://zhoushicheng.cn/archives/ || fa fa-archive
+  home: / || fa fa-home
+  # home: https://zhoushicheng.cn || fa fa-home
+  about: /about/ || fa fa-user
+  # about: https://zhoushicheng.cn/about/ || fa fa-user
+  tags: /tags/ || fa fa-tags
+  # tags: https://zhoushicheng.cn/tags/ || fa fa-tags
+  categories: /categories/ || fa fa-th
+  # categories: https://zhoushicheng.cn/categories/ || fa fa-th
+  archives: /archives/ || fa fa-archive
+  # archives: https://zhoushicheng.cn/archives/ || fa fa-archive
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
@@ -635,7 +635,7 @@ quicklink:
 # Use Animate.css to animate everything.
 # For more information: https://animate.style
 motion:
-  enable: false
+  enable: true
   async: false
   transition:
     # All available transition variants: https://theme-next.js.org/animate/
@@ -662,7 +662,7 @@ pace:
 # Generate a ribbon in your website with HTML5 canvas.
 # For more information: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: true
+  enable: false
   size: 300 # The width of the ribbon
   alpha: 0.6 # The transparency of the ribbon
   zIndex: -1 # The display level of the ribbon
@@ -681,7 +681,7 @@ comments:
   # Available values: disqus | disqusjs | changyan | livere | gitalk | utterances
   active: utterances
   # Setting `true` means remembering the comment system selected by the visitor.
-  storage: true
+  storage: false
   # Lazyload all comment systems.
   lazyload: false
   # Modify texts or order for any naves, here are some examples.

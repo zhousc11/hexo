@@ -11,7 +11,7 @@
 
 # Allow to cache content generation.
 cache:
-  enable: true
+  enable: false
 
 # Remove unnecessary files after hexo generate.
 minify: false
@@ -38,9 +38,9 @@ custom_file_path:
 
 # Schemes
 # scheme: Muse
-# scheme: Mist
+scheme: Mist
 # scheme: Pisces
-scheme: Gemini
+# scheme: Gemini
 
 # Dark Mode
 darkmode: false
@@ -254,7 +254,7 @@ excerpt_description: true
 
 # Read more button
 # If true, the read more button will be displayed in excerpt section.
-read_more_btn: true
+read_more_btn: false
 
 # Post meta display settings
 post_meta:
@@ -676,10 +676,10 @@ canvas_ribbon:
 # Multiple Comment System Support
 comments:
   # Available values: tabs | buttons
-  style: tabs
+  style: buttons
   # Choose a comment system to be displayed by default.
   # Available values: disqus | disqusjs | changyan | livere | gitalk | utterances
-  active: utterances
+  active: gitalk
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: false
   # Lazyload all comment systems.
@@ -727,12 +727,12 @@ livere_uid: # <your_uid>
 # Gitalk
 # For more information: https://gitalk.github.io
 gitalk:
-  enable: false
-  github_id: # GitHub repo owner
-  repo: # Repository name to store issues
-  client_id: # GitHub Application Client ID
-  client_secret: # GitHub Application Client Secret
-  admin_user: # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
+  enable: true
+  github_id: zhousc11 # GitHub repo owner
+  repo: hexo # Repository name to store issues
+  client_id: Ov23lioXreNFEJQ7YPYs # GitHub Application Client ID
+  client_secret: 993803b845a992db875a71aa3d3c5612c5e82545 # GitHub Application Client Secret
+  admin_user: zhousc11 # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
   distraction_free_mode: true # Facebook-like distraction free mode
   # When the official proxy is not available, you can change it to your own proxy address
   proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token # This is official proxy address
@@ -744,10 +744,10 @@ gitalk:
 # Utterances
 # For more information: https://utteranc.es
 utterances:
-  enable: true
+  enable: false
   repo: zhousc11/hexo # Github repository owner and name
   # Available values: pathname | url | title | og:title
-  issue_term: pathname
+  issue_term: url
   # Available values: github-light | github-dark | preferred-color-scheme | github-dark-orange | icy-dark | dark-blue | photon-dark | boxy-light
   theme: preferred-color-scheme
 
